@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "jasmine": "^5.1.0",
+    "jasmine-core": "^5.1.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

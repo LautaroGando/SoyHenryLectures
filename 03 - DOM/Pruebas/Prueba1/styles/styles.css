@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    form {
+        width: 300px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input,
+        textarea {
+            width: 80%;
+            height: 40px;
+            padding: 10px;
+            resize: none;
+            outline: none;
+            border: 2px solid rgb(29, 29, 29);
+            border-radius: 4px;
+            background-color: rgb(51, 51, 51);
+            color: white;
+            transition: all 0.2s linear;
+
+            &:focus {
+                border: 2px solid rgb(141, 25, 25);
+            }
+        }
+
+        button {
+            width: 80%;
+            height: 50px;
+            background-color: black;
+            border: none;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s linear;
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: rgb(141, 25, 25);
+            }
+        }
+    }
+    .container-cards {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        background-color: rgb(28, 28, 28);
+        padding: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+
+        .card {
+            width: 200px;
+            height: 250px;
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            transition: all .2s linear;
+            cursor: pointer;
+
+            p {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            img {
+                width: 100px;
+            }
+
+            &:hover {
+                transform: scale(1.03);
+                background-color: rgba(255, 255, 255, 0.538);
+            }
+        }
+    }
+}
