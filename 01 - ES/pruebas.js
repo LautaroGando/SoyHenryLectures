@@ -66,3 +66,11 @@ const objeto = {
 };
 
 objeto.metodo();
+
+let path = "/smart";
+
+console.log(path);
+
+path = path.split("s").pop()
+
+console.log(path);

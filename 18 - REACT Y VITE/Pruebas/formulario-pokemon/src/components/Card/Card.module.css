@@ -1,0 +1,13 @@
+.card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(34, 34, 34);
+
+    img {
+        width: 100px;
+        filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.555));
+    }
+}

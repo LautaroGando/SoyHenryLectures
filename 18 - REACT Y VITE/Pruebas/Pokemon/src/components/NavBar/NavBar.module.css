@@ -1,0 +1,36 @@
+.header {
+    height: 120px;
+    background-color: rgb(255, 86, 86);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    img {
+        width: 100px;
+        filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.555));
+    }
+
+    nav {
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: all 0.2s linear;
+                    display: block;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

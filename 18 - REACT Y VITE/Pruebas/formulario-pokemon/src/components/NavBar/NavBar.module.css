@@ -1,0 +1,98 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 2;
+
+    label {
+        width: 40px;
+        height: 30px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        z-index: 2;
+
+        span {
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            display: block;
+            position: relative;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 2px;
+                background-color: white;
+                left: 0;
+                transform: translateY(10px);
+            }
+
+            &::before {
+                transform: translateY(-10px);
+            }
+        }
+    }
+
+    input:checked + nav {
+        width: 300px;
+        box-shadow: 0 0 1500px 1500px rgba(0, 0, 0, 0.753);
+
+        img {
+            opacity: 1;
+        }
+
+        ul {
+            opacity: 1;
+        }
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 40px;
+        background-color: rgb(255, 82, 82);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: all 0.2s linear;
+        
+        img {
+            width: 120px;
+            margin-top: 80px;
+            opacity: 0;
+            transition: all 0.2s linear;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            opacity: 0;
+            transition: all 0.2s linear;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                overflow: hidden;
+
+                a {
+                    display: block;
+                    width: 150px;
+                    color: white;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

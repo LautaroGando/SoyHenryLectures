@@ -1,0 +1,14 @@
+.cardContainer {
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0 0 20px black;
+    margin: 40px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}

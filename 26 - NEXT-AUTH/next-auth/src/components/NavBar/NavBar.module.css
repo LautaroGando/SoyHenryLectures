@@ -1,0 +1,14 @@
+.container {
+    background-color: #4169e1;
+    color: white;
+    padding: 5px;
+}
+
+.headerContainer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Adopcion de Mascotas</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="assets/icons/logo.png" alt="">
+            <ul>
+                <li>
+                    <a id="register" href="#">Registrarme</a>
+                    <a id="login" href="#">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </div>
+        <div id="form-register" class="form-register">
+            <form action="">
+                <h2>FORMULARIO DE REGISTRO</h2>
+                <input type="text" name="userName" id="userName" placeholder="Nombre completo...">
+                <input type="text" name="userEmail" id="userEmail" placeholder="Correo electronico...">
+                <input type="text" name="userAge" id="userAge" placeholder="Edad...">
+                <input type="number" name="userDni" id="userDni" placeholder="DNI...">
+                <div class="buttons">
+                    <button id="close-form">CERRAR</button>
+                    <button id="sendForm">REGISTRARME</button>
+                </div>
+            </form>
+        </div>
+        <div id="form-login" class="form-login">
+            <form action="">
+                <h2>FORMULARIO DE INICIO DE SESION</h2>
+                <input type="number" name="userDniLogin" id="userDniLogin" placeholder="DNI...">
+                <div class="buttons">
+                    <button id="close-formLogin">CERRAR</button>
+                    <button id="sendFormLogin">INICIAR SESION</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-image"></div>
+        <h1>Adopta hoy mismo a tu <br> proximo compañero...</h1>
+        <a href="#main">
+            <i class="fa-solid fa-arrow-down-long"></i>
+        </a>
+        <i class="fa-solid fa-minus"></i>
+    </header>
+
+    <main id="main">
+        <div class="container-pets">
+            <h2>Elegi tu mascota</h2>
+            <div id="containerPets" class="pets">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <form id="form" action="">
+            <h2>AGREGAR MASCOTA</h2>
+            <input type="text" name="petName" id="petName" placeholder="Nombre del animal...">
+            <input type="text" name="petImage" id="petImage" placeholder="URL de la imagen del animal...">
+            <input type="text" name="petAnimal" id="petAnimal" placeholder="Tipo de animal...">
+            <input type="text" name="petRace" id="petRace" placeholder="Raza del animal...">
+            <input type="text" name="petAge" id="petAge" placeholder="Edad del animal...">
+            <div class="buttons">
+                <button id="removeValues">VACIAR</button>
+                <button id="sendValues">AGREGAR</button>
+            </div>
+        </form>
+    </footer>
+
+    <script src="bundle.js"></script>
+</body>
+</html>

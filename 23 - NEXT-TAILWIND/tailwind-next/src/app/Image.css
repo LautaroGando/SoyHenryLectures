@@ -1,0 +1,4 @@
+.img-adapter {
+    transform: translateY(-50%);
+    @apply inline-block h-12 w-12 rounded-full ring-2 ring-transparent;
+}

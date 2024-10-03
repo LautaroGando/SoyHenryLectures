@@ -1,0 +1,6 @@
+User-Agent: *               # cualquier robot
+Allow: /                    # permite esta ruta
+Disallow: /private/         # deshabilita esta ruta
+
+User-Agent: googlebot       # solo los robots de Google
+Disallow: /

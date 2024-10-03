@@ -1,4 +1,4 @@
-class Activity {
+/* class Activity {
 
     constructor(id, title, description, imgUrl) {
 
@@ -53,4 +53,4 @@ repository.createActivity(4, 'Salir con seres queridos', 'Es un lindo momento', 
 
 repository.deleteActivity(2);
 
-console.log(repository.getAllActivities());
+console.log(repository.getAllActivities()); */

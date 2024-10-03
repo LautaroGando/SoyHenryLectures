@@ -1,0 +1,88 @@
+.form {
+    height: calc(100vh - 170px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h2 {
+            color: rgb(255, 98, 98);
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+            padding: 5px;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.11);
+            transition: all 0.2s linear;
+
+            &:focus {
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.575);
+            }
+        }
+
+        .error {
+            font-size: 12px;
+            display: block;
+            width: 400px;
+            color: rgb(255, 104, 104);
+        }
+
+        .success {
+            font-size: 12px;
+            display: block;
+            width: 400px;
+            color: rgb(44, 173, 27);
+        }
+
+        button {
+            width: 400px;
+            height: 40px;
+            margin-top: 30px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            background-color: rgb(255, 104, 104);
+            color: white;
+            font-size: 22px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 100%;
+                background-image: url("https://www.bizak.es/wp-content/uploads/2023/05/BANNER-65-POKEMON-1920X700-1170x427.jpg");
+                background-size: cover;
+                background-position: center;
+                top: 0;
+                left: 0;
+                transition: all 0.2s linear;
+            }
+
+            &:hover::after {
+                width: 100%;
+                box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.808);
+            }
+
+            &:disabled {
+                opacity: 0.5;
+                cursor: no-drop;
+            }
+
+            &:disabled::after {
+                width: 0;
+                box-shadow: 0 0 0 0 transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+    padding: 25px 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 39px;
+    background: #EFECFF;
+    border: none;
+    margin-bottom: 31px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 38px;
+}
+
+.container > span {
+    color: #242331;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+}

@@ -1,0 +1,5 @@
+.todoList {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    box-shadow: 0 0 10px black;
+}

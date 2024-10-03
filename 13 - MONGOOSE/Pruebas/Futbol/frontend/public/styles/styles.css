@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-image: url("https://www.coovilros.com/Imagenes/Noticias/81.jpg");
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        
+        div {
+            display: flex;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.209);
+            border-radius: 20px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            align-items: center;
+            gap: 30px;
+
+            &:hover {
+                background-color: rgba(0, 89, 255, 0.288);
+                box-shadow: 0 0 10px rgba(0, 89, 255, 0.5);
+            }
+
+            img {
+                width: 80px;
+                align-items: left;
+            }
+        }
+
+        div h2:nth-child(2) {
+            width: 400px;
+        }
+
+        div h2:nth-child(3) {
+            width: 400px;
+        }
+
+        div h2:nth-child(4) {
+            width: 400px;
+        }
+    }
+}

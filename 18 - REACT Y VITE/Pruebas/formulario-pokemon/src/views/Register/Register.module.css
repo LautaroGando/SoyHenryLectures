@@ -1,0 +1,40 @@
+.form {
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.336);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 650px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+
+    input {
+        height: 30px;
+        width: 80%;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid white;
+        outline: none;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.534);
+        }
+    }
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}

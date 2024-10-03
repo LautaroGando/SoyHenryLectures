@@ -1,0 +1,10 @@
+.card {
+    width: 250px;
+    background-color: rgb(59, 57, 57);
+    padding: 10px;
+    transition: all 0.2s linear;
+
+    &:hover {
+        background-color: rgb(149, 137, 13);
+    }
+}
